@@ -1,0 +1,9 @@
+<div *ngIf="showMenu()">
+    <a routerLink='user-home'  routerLinkActive="active" (click)="userLogin()">User Login</a>
+    <a routerLink='driver-home'  routerLinkActive="active"><button>Driver Login</button></a>
+    <a routerLink='admin-home'  routerLinkActive="active"><button>Admin Login</button></a>
+</div>
+
+<div>
+    <router-outlet></router-outlet>
+</div>
